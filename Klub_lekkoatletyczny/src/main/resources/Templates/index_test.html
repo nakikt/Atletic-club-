@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+<title>TEST</title>
+</head>
+
+<body>
+
+	<div align="center">
+		<h1>TEST</h1>
+		
+		<table border="1" cellpadding="10">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>nazwa</th>
+					<th>data</th>
+					<th>adres</th>
+					<th class="text-center" style="vertical-align: middle;width: 66px;"></th>
+                    <th class="text-center" style="vertical-align: middle;width: 68px;"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="Kluby_lekkoatletyczne : ${listKluby_lekkoatletyczne}">
+					<td th:text="${Kluby_lekkoatletyczne.nr_klubu}">ID</td>
+					<td th:text="${Kluby_lekkoatletyczne.nazwa}">test</td>
+					<td th:text="${Kluby_lekkoatletyczne.data_zalozenia}">test</td>
+					<td th:text="${Kluby_lekkoatletyczne.nr_adresu}">test</td>
+					<td style="color: rgb(255,255,255);padding-top: 5px;padding-right: 0px;padding-bottom: 5px;padding-left: 0px;vertical-align: middle;"><a href="#" style="border-color: rgb(208,208,208);color: rgb(0,0,0);font-family: Cabin, sans-serif;">EDYTUJ</a></td>
+                    <td style="color: rgb(255,255,255);padding-top: 5px;padding-bottom: 5px;vertical-align: middle;"><a href="#" style="color: rgb(0,0,0);font-family: Cabin, sans-serif;vertical-align: initial;">USUŃ</a></td>
+				</tr>
+				<tr>
+                    <td style="border-bottom-width: 0px;"><a href="test-add.html" style="color: rgb(0,0,0);font-family: Cabin, sans-serif;vertical-align: initial;">DODAJ REKORD</a></td>
+                </tr>
+                <tr></tr>
+			</tbody>
+		</table>
+
+</div>
+</body>
+</html>

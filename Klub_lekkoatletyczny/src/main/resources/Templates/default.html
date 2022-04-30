@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pallas - Klub lekkoatletyczny</title>
+    <meta name="description" content="Oficjalna strona klubu lekkoatletycznego Pallas">
+    <link rel="icon" type="image/jpeg" sizes="64x64" href="assets/img/favicon.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(33,37,41,0.96);">
+        <div class="container"><a class="navbar-brand" href="index.html">Pallas</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-xl-flex align-items-xl-center" data-bss-hover-animate="pulse"><a class="nav-link" href="index.html">Strona główna</a></li>
+                    <li class="nav-item d-xl-flex align-items-xl-center" data-bss-hover-animate="pulse"><a class="nav-link d-xl-flex align-items-xl-center" href="tabele.html">Tabele</a></li>
+                    <form class="nav-link d-lg-flex d-xl-flex align-items-lg-center justify-content-xl-center align-items-xl-center" th:action="@{/logout}" method="post"><input type="submit" value="WYLOGUJ" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="color: rgb(256,256,256);background-color: Transparent;border: none"/></form>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;assets/img/tlo.jpg&quot;);background-size: cover;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">Pallas</h1>
+                        <p class="intro-text" style="font-family: Cabin, sans-serif;">Oficjalna strona klubu lekkoatletycznego Pallas</p><a href="#about" style="color: rgb(255,255,255);"><i class="fa fa-angle-double-down bounce animated" style="font-size: 66px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about" style="background: url(&quot;assets/img/tlo2.jpg&quot;) center / cover, rgba(0,0,0,0);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="background: rgba(174,174,174,0.32);padding: 35px;padding-right: 100px;padding-left: 100px;">
+                    <h2>O Klubie Pallas</h2>
+                    <p>Pallas to klub lekkoatletyczny, którego pierwsza filia została założona w Warszawie w 1995 r., a 5 lat później powstała kolejna w Płocku. W najbliższych latach planujemy otworzyć kolejne.</p>
+                    <p>Zawodnicy klubu Pallas mają na swoim koncie wiele sukcesów w każdej z dyscyplin. Nasi trenerzy biorą pod swoje skrzydła zawodników w każdym wieku - nasi najmłodsi zawodnicy mają już 6 lat!</p>
+                    <p>Dołącz do nas już dziś, a Twoje nazwisko wkrótce z pewnością znajdzie się wśród najlepszych zawodników w Polsce i na świecie!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center download-section content-section" id="download" style="background-image:url('assets/img/downloads-bg.jpg');">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>Kontakt</h1>
+                <p>Skontaktuj się z nami</p>
+            </div>
+        </div>
+        <div class="social-icons" style="background: rgba(255,255,255,0);font-size: 9px;padding-top: 6px;padding-bottom: 14px;"><a href="error.html"><i class="icon ion-social-twitter" style="background: #ffffff;"></i></a><a href="error.html"><i class="icon ion-social-facebook" style="background: #ffffff;"></i></a><a href="error.html"><i class="icon ion-social-snapchat" style="background: #ffffff;"></i></a><a href="error.html"><i class="icon ion-social-youtube" style="background: #ffffff;"></i></a></div>
+    </section>
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright ©&nbsp;Pallas 2021</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+</body>
+
+</html>
